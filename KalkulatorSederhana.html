@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        fieldset{
+            margin-left: 40%;
+            margin-top: 12%;
+        }
+        .bt{
+            width: 65px;
+            height: 25px;
+            margin: 2px;
+            background-color: black;
+            color: white;
+        }
+        #clear{
+            background-color: white;
+            color: black;
+        }
+        #btt{
+            margin-left: 35px;
+        }
+        .field{
+            width: 210px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="width:280px">
+        <legend align="center">KALKULATOR</legend>
+                      
+              Angka1: <input type="text" id="Angka1"  class="field" /><br><br>
+              Angka2: <input type="text" id="Angka2"  class="field" /><br><br>
+              <div id="btt">
+                <input class="bt" type="button" id="tambah" value="tambah"/>
+                <input class="bt" type="button" id="kurang" value="kurang"/>
+                <input class="bt" type="button" id="kali" value="kali"/><br><br>
+                <input class="bt" type="button" id="bagi" value="bagi"/>
+                <input class="bt" type="button" id="modulus" value="modulus"/>
+                <input class="bt" type="button" id="clear" value="clear"/><br><br>
+              </div>
+              Hasil : <input type="text" class="field" disabled="disabled" name="hasil" id="hasil">                            
+      </fieldset>        
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
